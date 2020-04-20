@@ -1,4 +1,10 @@
 # Starter pipeline
+- task: SSH@0
+  inputs:
+    sshEndpoint: 'hususer@52.170.131.174'
+    runOptions: 'commands'
+    commands: 'mkdir test 101'
+    readyTimeout: '20000'
 # Start with a minimal pipeline that you can customize to build and deploy your code.
 # Add steps that build, run tests, deploy, and more:
 # https://aka.ms/yaml
