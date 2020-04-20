@@ -1,6 +1,7 @@
 # Starter pipeline
 - task: SSH@0
   inputs:
+    sshEndpoint: 'hususer@52.170.131.174'
     runOptions: 'commands'
     commands: 'ls /home'
     readyTimeout: '20000'
@@ -19,7 +20,6 @@ steps:
   displayName: 'Run a one-line script'
 
 - script: |
-    echo "Hello Hassomeh"
     echo Add other tasks to build, test, and deploy your project.
     echo See https://aka.ms/yaml
   displayName: 'Run a multi-line script'
