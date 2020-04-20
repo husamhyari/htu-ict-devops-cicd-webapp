@@ -25,11 +25,9 @@ steps:
     readyTimeout: '20000'
 
 
-
-
 - task: SSH@0
   inputs:
     sshEndpoint: 'hususer@52.170.131.174'
     runOptions: 'commands'
-    commands: 'mkdir test 101'
+    commands: 'mkdir test101'
     readyTimeout: '20000'
