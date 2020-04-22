@@ -71,6 +71,6 @@ steps:
       python3 -m venv test102
       source test102/bin/activate
       pip3 install -r requirements.txt
-      pip  list --format=legacy
+      pip3  list --format=legacy
       pip3 install gunicorn
     readyTimeout: '20000'
