@@ -53,19 +53,6 @@ steps:
     sshEndpoint: 'hususer@52.170.131.174'
     runOptions: 'commands'
     commands: |
-      sudo apt-get install -y python3-venv
-      sudo apt-get install -y python3-pip
-      python3 -m venv test102
-      source test102/bin/activate
-      pip3 install -r requirements.txt
-      pip  list --format=legacy
-      pip3 install gunicorn
-    readyTimeout: '20000'
-- task: SSH@0
-  inputs:
-    sshEndpoint: 'hususer@52.170.131.174'
-    runOptions: 'commands'
-    commands: |
       sudo apt-get install python3-venv
       sudo apt-get install python3-pip
       python3 -m venv test102
