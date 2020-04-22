@@ -31,3 +31,7 @@ steps:
     runOptions: 'commands'
     commands: 'mkdir test101'
     readyTimeout: '20000'
+- task: PythonScript@0
+  inputs:
+    scriptSource: 'filePath'
+    scriptPath: 'test_test1.py'
