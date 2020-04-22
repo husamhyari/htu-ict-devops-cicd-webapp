@@ -45,9 +45,19 @@ steps:
 - task: CopyFilesOverSSH@0
   inputs:
     sshEndpoint: 'hususer@52.170.131.174'
-    contents: 'requirements.txt'
+    contents: |
+      requirements.txt
+      hello.py
     targetFolder: '/home/hususer'
     readyTimeout: '20000'
+- task: CopyFilesOverSSH@0
+  inputs:
+    sshEndpoint: 'hususer@52.170.131.174'
+    sourceFolder: 'hello_app'
+    contents: '**'
+    targetFolder: '/home/hususer'
+    readyTimeout: '20000'
+
 - task: SSH@0
   inputs:
     sshEndpoint: 'hususer@52.170.131.174'
