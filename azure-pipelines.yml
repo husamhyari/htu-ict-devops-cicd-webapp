@@ -55,7 +55,7 @@ steps:
     sshEndpoint: 'hususer@52.170.131.174'
     sourceFolder: 'hello_app'
     contents: '**'
-    targetFolder: '/home/hususer'
+    targetFolder: '/home/hususer/hello_app'
     readyTimeout: '20000'
 
 - task: SSH@0
