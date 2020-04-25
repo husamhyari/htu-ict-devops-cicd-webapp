@@ -44,7 +44,7 @@ steps:
   displayName: 'edit Env'
 - task: CopyFilesOverSSH@0
   inputs:
-    sshEndpoint: 'hususer@52.170.131.174'
+    sshEndpoint: 'hususer@40.114.44.53'
     contents: |
       requirements.txt
       hello.py
