@@ -19,7 +19,7 @@ steps:
   displayName: 'Run a multi-line script'
 - task: SSH@0
   inputs:
-    sshEndpoint: 'hususer@52.170.131.174'
+    sshEndpoint: 'hususer@40.114.44.53'
     runOptions: 'commands'
     commands: 'ls /home'
     readyTimeout: '20000'
@@ -52,7 +52,7 @@ steps:
     readyTimeout: '20000'
 - task: CopyFilesOverSSH@0
   inputs:
-    sshEndpoint: 'hususer@52.170.131.174'
+    sshEndpoint: 'hususer@40.114.44.53'
     sourceFolder: 'hello_app'
     contents: '**'
     targetFolder: '/home/hususer/hello_app'
@@ -60,7 +60,7 @@ steps:
 
 - task: SSH@0
   inputs:
-    sshEndpoint: 'hususer@52.170.131.174'
+    sshEndpoint: 'hususer@40.114.44.53'
     runOptions: 'commands'
     commands: |
       sudo apt-get install python3-venv
